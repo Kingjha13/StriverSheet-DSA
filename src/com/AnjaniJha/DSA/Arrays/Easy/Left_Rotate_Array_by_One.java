@@ -1,4 +1,4 @@
-class Solution {
+class Check_if_Array_is_Sorted_or_not {
     public void rotateArrayByOne(int[] nums) {
         int n = nums.length;
         
