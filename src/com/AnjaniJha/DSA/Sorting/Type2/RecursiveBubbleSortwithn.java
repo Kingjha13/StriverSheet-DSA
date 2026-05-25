@@ -16,9 +16,10 @@ public class RecursiveBubbleSortwithn {
             }
         }
 
-        // Recurse for the remaining unsorted array
+        // Recurse for the remaining unsorted array.
         bubbleSort(arr, n - 1);
     }
+
 
     public static void main(String[] args) {
         int[] arr = {13, 46, 24, 52, 20, 9};

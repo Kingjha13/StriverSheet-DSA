@@ -1,22 +1,48 @@
 package com.AnjaniJha.DSA.Recursion;
-//Print names n times using recursion
-
-import java.util.Scanner;
 
 public class Ntimes {
-    public static void main(String[] args) {
-            Scanner input = new Scanner(System.in);
-            System.out.println("Enter the number of times you want to print your name: ");
-            int n = input.nextInt();
-            String name = "Anjani";
-            printName(n,name);
-    }
 
-            public static void printName(int n , String name) {
+    public static void printName(int n, String name) {
+
+        // Base case
         if (n == 0) {
             return;
         }
+
         System.out.println(name);
-        printName(n-1,name);
-        }
+
+        // Recursive call
+        printName(n - 1, name);
+    }
+
+    public static void main(String[] args) {
+
+        /*
+         * Problem:
+         * Print a given name N times using recursion.
+         *
+         * Example:
+         * Input: n = 5, name = "Avanish"
+         * Output:
+         * Avanish
+         * Avanish
+         * Avanish
+         * Avanish
+         * Avanish
+         *
+         * Approach:
+         * 1. Print name
+         * 2. Reduce n by 1
+         * 3. Stop when n == 0
+         *
+         * Time Complexity: O(n)
+         * Space Complexity: O(n) (recursion stack)
+         *
+         * How to test:
+         * printName(5, "Avanish");
+         * printName(3, "Anjani");
+         */
+
+        printName(5, "Avanish");
+    }
 }
